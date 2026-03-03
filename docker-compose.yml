@@ -3,9 +3,9 @@ version: "3.9"
 services:
   udp-chat:
     build: .
-    env_file:
-      - .env
     ports:
       - "5000:5000/udp"
+    env_file:
+      - .env
     stdin_open: true
     tty: true
